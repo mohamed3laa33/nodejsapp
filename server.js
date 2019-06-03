@@ -12,5 +12,8 @@ app.get('/', (req, res) => {
   res.send('Hello world\n');
 });
 
+app.post('/hello', (req, res) => {
+ res.send('Hello world throught post\n');
+});
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
